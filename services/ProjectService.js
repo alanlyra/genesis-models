@@ -20,8 +20,8 @@ async function addDocument(req) {
     const newDocument = new Document({
         _id,
         name: req.file.filename,
-        title: metadata.title,
-        description: metadata.description,
+        title: (metadata.title && metadata.title.trim() !== '') ? metadata.title : "Untitled Document - ID: " + _id,
+        description: (metadata.description && metadata.description.trim() !== '') ? metadata.description : "No description",
         uploadDate: new Date(),
         URL: req.file.filename,
         author: metadata.author,

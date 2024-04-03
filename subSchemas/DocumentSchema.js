@@ -32,7 +32,7 @@ DocumentSchema.virtual('projects', {
     foreignField: 'bibliometrics.documents'
 })
 
-// Relação entre Projects e Document pelo mongoose
+// Relação entre Roadmap e Document pelo mongoose
 DocumentSchema.virtual('roadmap', {
     ref: 'RoadmapDocument',
     localField: '_id',
