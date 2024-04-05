@@ -11,7 +11,14 @@ const RoadmapSchema = new Schema({
     sentence: String,
     forecast: String,
     forecastDate: String,
-    explicitDate: String
+    explicitDate: String,
+    createdDate: Date,
+    deleted: Boolean,
+    deletedDate: Date,
+    deletedBy: String,
+    updated: Boolean,
+    updatedLastDate: Date,
+    updatedLastBy: String,
 },{
     toJSON:{virtuals: true},
     toObject:{virtuals: true}
