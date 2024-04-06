@@ -4,7 +4,7 @@ const PDFParser = require('pdf-parse');
 
 // Função para converter um arquivo PDF em TXT
 async function convertPDFtoText(document) {
-  const pdfBuffer = fs.readFileSync(`pdfDocs/${document.name}`);
+  const pdfBuffer = fs.readFileSync(`files/pdfDocs/${document.name}`);
 
   const data = await PDFParser(pdfBuffer);
 
