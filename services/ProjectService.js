@@ -29,6 +29,7 @@ async function addDocument(req) {
         publisher: metadata.publisher,
         subject: metadata.subject,
         issn: metadata.issn,
+        roadmapStatus: "Created",
         creator: metadata.creator,
         producer: metadata.producer
     });

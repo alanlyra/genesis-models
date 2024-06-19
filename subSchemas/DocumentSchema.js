@@ -16,8 +16,10 @@ const DocumentSchema = new Schema({
     issn: String,
     creator: String,
     producer: String,
+    roadmapStatus: String,
     preprocessing: {
         text: String,
+        nerTaggedText: String,
         sentences: [Schema.Types.Mixed]
     }
 },{

@@ -25,6 +25,7 @@ const ProjectsSchema = new Schema({
     updated: Boolean,
     updatedLastDate: Date,
     updatedLastBy: String,
+    ner: String,
     bibliometrics: {
         method: String,
         keywords: [String],
