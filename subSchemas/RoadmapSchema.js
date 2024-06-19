@@ -19,6 +19,9 @@ const RoadmapSchema = new Schema({
     updated: Boolean,
     updatedLastDate: Date,
     updatedLastBy: String,
+    generatedByAI: Boolean,
+    generatedByNER: Boolean,
+    refinedByAI: Boolean,
 },{
     toJSON:{virtuals: true},
     toObject:{virtuals: true}
