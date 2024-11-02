@@ -3,6 +3,7 @@ const { Schema } = mongoose;
 
 const DocumentSchema = require('./subSchemas/DocumentSchema');
 const RoadmapSchema = require('./subSchemas/RoadmapSchema.js');
+const ScopusResearchSchema = require('./subSchemas/scopusResearchSchema.js');
 const ScenariosSchema = require('./subSchemas/ScenariosSchema.js');
 const ReportSchema = require('./subSchemas/ReportSchema');
 const { collection } = require('./Empresas');
@@ -26,9 +27,10 @@ const ProjectsSchema = new Schema({
     updatedLastDate: Date,
     updatedLastBy: String,
     ner: String,
+    keywords: [String],
+    scopusResearch: [ScopusResearchSchema],
+    method: String,
     bibliometrics: {
-        method: String,
-        keywords: [String],
         documents: [{
             type: mongoose.Schema.Types.ObjectId,
             ref: 'Document'
