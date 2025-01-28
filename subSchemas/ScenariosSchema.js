@@ -4,7 +4,10 @@ const { Schema } = mongoose;
 const ScenariosSchema = new Schema({
     plausible: String,
     pessimistic: String,
-    optimistic: String
+    optimistic: String,
+    plausibleGenerated: String,
+    pessimisticGenerated: String,
+    optimisticGenerated: String
 });
 
 module.exports = ScenariosSchema;

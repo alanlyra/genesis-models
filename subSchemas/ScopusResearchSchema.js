@@ -1,7 +1,9 @@
 const mongoose = require('mongoose');
+const { title } = require('process');
 const { Schema } = mongoose;
 
 const ScopusResearchSchema = new Schema({
+    title: String,
     doi: String,
     pdfLink: String,
     authors: String,
