@@ -3,7 +3,7 @@ const { Schema } = mongoose;
 
 const DocumentSchema = require('./subSchemas/DocumentSchema');
 const RoadmapSchema = require('./subSchemas/RoadmapSchema.js');
-const ScopusResearchSchema = require('./subSchemas/scopusResearchSchema.js');
+const ScopusResearchSchema = require('./subSchemas/ScopusResearchSchema.js');
 const ScenariosSchema = require('./subSchemas/ScenariosSchema.js');
 const ReportSchema = require('./subSchemas/ReportSchema');
 const { collection } = require('./Empresas');
