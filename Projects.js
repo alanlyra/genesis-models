@@ -7,6 +7,7 @@ const ScopusResearchSchema = require('./subSchemas/ScopusResearchSchema.js');
 const ScenariosSchema = require('./subSchemas/ScenariosSchema.js');
 const ReportSchema = require('./subSchemas/ReportSchema');
 const { collection } = require('./Empresas');
+const FuturesWheelsSchema = require('./subSchemas/FuturesWheelsSchema.js');
 
 // Services
 ProjectService = require('./services/ProjectService')
@@ -38,6 +39,7 @@ const ProjectsSchema = new Schema({
     },
     roadmap: [RoadmapSchema],
     scenarios: [ScenariosSchema],
+    futureswheels: [FuturesWheelsSchema],
     report: [ReportSchema]
 });
 
